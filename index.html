@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucra+ | Captação de Leads</title>
+    <!-- Conexão com o seu arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Alavanque suas vendas</h1>
+            <p>Preencha os dados abaixo e nossa equipe estruturará a melhor estratégia para o seu negócio.</p>
+        </header>
+
+        <!-- O ID 'formCadastro' conecta diretamente com o script.js -->
+        <form id="formCadastro">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail Profissional</label>
+                <input type="email" id="email" placeholder="contato@suaempresa.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">WhatsApp</label>
+                <input type="tel" id="telefone" placeholder="(11) 90000-0000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="servico">Serviço de Interesse</label>
+                <select id="servico" required>
+                    <option value="" disabled selected>Selecione a especialidade</option>
+                    <option value="Tráfego Pago">Tráfego Pago</option>
+                    <option value="SEO">Otimização SEO</option>
+                    <option value="Gestão de Redes Sociais">Gestão de Redes Sociais</option>
+                    <option value="Consultoria Completa">Consultoria Completa</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">Solicitar Proposta</button>
+        </form>
+    </main>
+
+    <!-- Conexão com a lógica do banco de dados -->
+    <script src="script.js"></script>
+</body>
+</html>
